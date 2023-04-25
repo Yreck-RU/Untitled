@@ -37,15 +37,15 @@ if (buttonSerch) {
 		document.body.classList.toggle('_lock');
 		menuSerch.classList.toggle('_active');
 	});
-}
-document.addEventListener( 'click', (e) => {
-	let withinBoundaries = e.composedPath().includes(buttonSerch);
-	let withinBoundaries2 = e.composedPath().includes(menuSerch);
+	document.addEventListener( 'click', (e) => {
+		let withinBoundaries = e.composedPath().includes(buttonSerch);
+		let withinBoundaries2 = e.composedPath().includes(menuSerch);
 
-	if ( ! withinBoundaries && ! withinBoundaries2) {
-		menuSerch.classList.remove('_active');
-	}
-})
+		if ( ! withinBoundaries && ! withinBoundaries2) {
+			menuSerch.classList.remove('_active');
+		}
+	})
+}
 //======================================================
 
 
@@ -114,4 +114,17 @@ if (panels) {
 			
 		})
 	}
+}
+
+/*==============================================*/
+
+
+const PanelBurger = document.querySelector('.panel-link-button');
+
+if (PanelBurger) {
+	let panelBurgerWrapper = document.querySelector('.panel-link__burger');
+	PanelBurger.addEventListener("click", function (e) {
+		PanelBurger.classList.toggle('_active');
+		panelBurgerWrapper.classList.toggle('_active');
+	});
 }
