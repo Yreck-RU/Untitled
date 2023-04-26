@@ -492,12 +492,33 @@ body {
   -ms-flex: 0 0 70%;
   flex: 0 0 70%;
   padding-left: 20px; }
+  .project-header__links._active .project-header__link-all ~ * {
+    max-height: 0;
+    max-width: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    border: 0px solid #000;
+    -webkit-transition: height 0.3s ease 0s;
+    -o-transition: height 0.3s ease 0s;
+    transition: height 0.3s ease 0s; }
+  .project-header__links._active .project-header__link-all {
+    display: block; }
   @media (max-width: 767px) {
     .project-header__links {
       -webkit-box-pack: start;
       -ms-flex-pack: start;
       justify-content: flex-start;
       padding-left: 0px; } }
+
+.project-header__link-all {
+  display: none;
+  cursor: pointer; }
+
+.project-header__link-hide {
+  cursor: pointer; }
 
 .project-header__link {
   -webkit-box-flex: 0;
@@ -513,7 +534,10 @@ body {
   border-radius: 15px;
   padding: 3px 12px;
   margin-left: 12px;
-  margin-bottom: 12px; }
+  margin-bottom: 12px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
   .project-header__link.project-header__link_black {
     background: black;
     border: 1px solid black; }
@@ -3131,3 +3155,66 @@ textarea.editing-panel-input__item {
   line-height: 29px;
   color: #000;
   margin-bottom: 25px; }
+
+/*=====================================*/
+.copia-content {
+  position: relative;
+  padding-right: 28px;
+  min-height: 34px;
+  max-width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .copia-content.copia-content_100 {
+    max-width: 100%;
+    padding-right: 0; }
+  .copia-content.copia-content_100 .copia-content__button {
+    right: 12px;
+    -webkit-transform: translateY(-70%);
+    -ms-transform: translateY(-70%);
+    transform: translateY(-70%); }
+
+.copia-content__content {
+  display: inline-block;
+  max-width: 150px;
+  overflow: hidden;
+  position: relative; }
+  .copia-content__content:before {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    z-index: 3; }
+  .copia-content__content:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 13px;
+    height: 100%;
+    background: #fff;
+    z-index: 2; }
+  .copia-content__content._input {
+    max-width: 100%; }
+  .copia-content__content._input:before {
+    display: none; }
+  .copia-content__content._input:after {
+    display: none; }
+
+.copia-content__button {
+  position: absolute;
+  display: inline-block;
+  right: 0px;
+  top: 50%;
+  width: 18px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer; }
+  .copia-content__button img {
+    width: 100%; }
