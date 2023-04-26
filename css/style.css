@@ -2354,13 +2354,13 @@ textarea.editing-panel-input__item {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 120px;
   flex: 0 0 120px;
-  max-width: 120px;
+  max-width: 85px;
   position: relative;
   z-index: 10;
   background: #000; }
   @media (max-width: 1240px) {
     .panel-link {
-      max-width: calc(0px + 120 * ((100vw - 320px) / 920)); } }
+      max-width: calc(5px + 80 * ((100vw - 320px) / 920)); } }
   .panel-link:before {
     content: "";
     position: absolute;
@@ -2504,15 +2504,15 @@ textarea.editing-panel-input__item {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     position: relative;
-    width: 70px; }
+    width: 60px; }
     @media (max-width: 1240px) {
       .panel-link__logo img {
-        width: calc(40px + 30 * ((100vw - 320px) / 920)); } }
+        width: calc(30px + 30 * ((100vw - 320px) / 920)); } }
 
 .panel-link__item {
   margin-bottom: 30px;
   position: relative;
-  font-size: 44px;
+  font-size: 34px;
   color: #fff;
   position: relative;
   display: inline-block;
