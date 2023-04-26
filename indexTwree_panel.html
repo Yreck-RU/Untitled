@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<!--Заголовок страницы, контейнер для других важных данных (не отображается)-->
+	<head>
+		<!--Заголовок страницы-->
+		<title>Title</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+		<!--===============================-->
+		<!--Libs-->
+
+			<!--JQ--><script src="libs/jquery.js"></script>
+
+		<!--===============================-->
+		<!--Css-->
+			<link rel="stylesheet" href="css/style.css" />
+		<!--===============================-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<section>
+				<div class="panel">
+					<div class="container panel__wrapper">
+						<div class="panel-link">
+							<div class="panel-link-button">
+								<span></span>
+							</div>
+							<div class="panel-link__burger">
+								<div class="">
+									<div class="panel-link__logo">
+										<a href="#"><img src="img/panel/Logo.svg" alt=""></a>
+									</div>
+									<div class="panel-link__list">
+										<a href="#" class="panel-link__item _active icon-category"></a>
+										<a href="#" class="panel-link__item icon-document-favorite"></a>
+										<a href="#" class="panel-link__item icon-chart-2"></a>
+										<a href="#" class="panel-link__item icon-personalcard"></a>
+										<a href="#" class="panel-link__item icon-search-normal"></a>
+										<a href="#" class="panel-link__item icon-home-hashtag"></a>
+									</div>
+									<div class="panel-link__exit">
+										<a href="#" class="panel-link__item icon-login"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-content">
+							<div class="panel-header">
+								<div class="panel-header__title">
+									Проекты студии
+								</div>
+								<div class="panel-header__butons">
+									<a href="" class="panel-header__button">
+										<span class="icon-notification"></span>
+									</a>
+									<a href="#" class="panel-header-user">
+										<span class="panel-header-user__img ibg">
+											<img src="img/project/2.jpg" alt="">
+										</span>
+										<span class="panel-header-user__text">
+											<span>Виктор А.</span>
+											<span class="icon-pointer"></span>
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="editing__wrapper">
+								<form action="#" class="editing-panel">
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Название
+										</div>
+										<input type="text" name="" class="editing-panel-input__item" placeholder="Добавьте название проекта">
+									</div>
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Описание
+										</div>
+										<textarea class="editing-panel-input__item" placeholder="Добавьте описание проекта"></textarea>
+									</div>
+									<span class="editing-panel__line"></span>
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Адрес
+										</div>
+										<input type="email" name="" class="editing-panel-input__item" placeholder="Адрес">
+									</div>
+									<div class="editing-panel-link">
+										<div class="editing-panel-link__title">
+											Ссылка на просмотр проекта 
+										</div>
+										<a href="#" class="editing-panel-link__content">
+											https//site.ru/preview/Project_255 
+										</a>
+									</div>
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Задать пароль
+										</div>
+										<div class="editing-panel-input__body editing-panel-input__body_50-50">
+											<input type="text" name="" class="editing-panel-input__item" placeholder="пароль">
+											<a href="#" class="editing-panel-input__link">Сделать публичной</a>
+										</div>
+									</div>
+									<span class="editing-panel__line"></span>
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Дата начала проекта
+										</div>
+										<div class="editing-panel-input-data">
+											<div class="editing-panel-input__body editing-panel-input__body_80-20">
+												<div class="editing-panel-input__item_icon select">
+													<div class="select-title">
+														<input type="text" placeholder="16" data-default="16" class="_req">
+													</div>
+													<div class="select-content">
+														<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+														<label for="singleSelect0" class="select-content__label"></label>
+														<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect1" class="select-content__label">1</label>
+														<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect2" class="select-content__label">2</label>
+														<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect3" class="select-content__label">3</label>
+													</div>
+												</div>
+											</div>
+											<div class="editing-panel-input__body editing-panel-input__body_80-20">
+												<div class="editing-panel-input__item_icon select">
+													<div class="select-title">
+														<input type="text" placeholder="Апрель" data-default="Апрель" class="_req">
+													</div>
+													<div class="select-content">
+														<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+														<label for="singleSelect0" class="select-content__label"></label>
+														<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect1" class="select-content__label">Lorem 1</label>
+														<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect2" class="select-content__label">Lorem 2</label>
+														<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect3" class="select-content__label">Lorem 3</label>
+													</div>
+												</div>
+											</div>
+											<div class="editing-panel-input__body editing-panel-input__body_80-20">
+												<div class="editing-panel-input__item_icon select">
+													<div class="select-title">
+														<input type="text" placeholder="2023" data-default="2023" class="_req">
+													</div>
+													<div class="select-content">
+														<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+														<label for="singleSelect0" class="select-content__label"></label>
+														<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect1" class="select-content__label">2001</label>
+														<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect2" class="select-content__label">2002</label>
+														<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect3" class="select-content__label">2003</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Дата сдачи проекта
+										</div>
+										<div class="editing-panel-input-data">
+											<div class="editing-panel-input__body editing-panel-input__body_80-20">
+												<div class="editing-panel-input__item_icon select">
+													<div class="select-title">
+														<input type="text" placeholder="16" data-default="16" class="_req">
+													</div>
+													<div class="select-content">
+														<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+														<label for="singleSelect0" class="select-content__label"></label>
+														<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect1" class="select-content__label">1</label>
+														<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect2" class="select-content__label">2</label>
+														<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect3" class="select-content__label">3</label>
+													</div>
+												</div>
+											</div>
+											<div class="editing-panel-input__body editing-panel-input__body_80-20">
+												<div class="editing-panel-input__item_icon select">
+													<div class="select-title">
+														<input type="text" placeholder="Апрель" data-default="Апрель" class="_req">
+													</div>
+													<div class="select-content">
+														<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+														<label for="singleSelect0" class="select-content__label"></label>
+														<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect1" class="select-content__label">Lorem 1</label>
+														<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect2" class="select-content__label">Lorem 2</label>
+														<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect3" class="select-content__label">Lorem 3</label>
+													</div>
+												</div>
+											</div>
+											<div class="editing-panel-input__body editing-panel-input__body_80-20">
+												<div class="editing-panel-input__item_icon select">
+													<div class="select-title">
+														<input type="text" placeholder="2023" data-default="2023" class="_req">
+													</div>
+													<div class="select-content">
+														<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+														<label for="singleSelect0" class="select-content__label"></label>
+														<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect1" class="select-content__label">2001</label>
+														<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect2" class="select-content__label">2002</label>
+														<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect3" class="select-content__label">2003</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<span class="editing-panel__line"></span>
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Клиент
+										</div>
+										<div class="editing-panel-input__body editing-panel-input__body_80-20">
+											<div class="editing-panel-input__item_icon select">
+												<div class="select-title">
+													<input type="text" placeholder="Добавьте или выберите клиента" data-default="RRMS – (relapsing-remitt..." class="_req">
+												</div>
+												<div class="select-content">
+													<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+													<label for="singleSelect0" class="select-content__label"></label>
+													<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+													<label for="singleSelect1" class="select-content__label">Lorem 1</label>
+													<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+													<label for="singleSelect2" class="select-content__label">Lorem 2</label>
+													<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+													<label for="singleSelect3" class="select-content__label">Lorem 3</label>
+												</div>
+											</div>
+											<a href="#" class="editing-panel-input__button"></a>
+										</div>
+									</div>
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Руководитель проекта
+										</div>
+										<span class="editing-panel-input__item_icon select">
+											<div class="select-title">
+												<input type="text" placeholder="Выберите руководителя проекта" data-default="Выберите руководителя проекта">
+											</div>
+											<div class="select-content">
+												<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+												<label for="singleSelect0" class="select-content__label"></label>
+												<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+												<label for="singleSelect1" class="select-content__label">Lorem 1</label>
+												<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+												<label for="singleSelect2" class="select-content__label">Lorem 2</label>
+												<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+												<label for="singleSelect3" class="select-content__label">Lorem 3</label>
+											</div>
+										</span>
+									</div>
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Иполнитель проекта
+										</div>
+										<span class="editing-panel-input__item_icon select">
+											<div class="select-title">
+												<input type="text" placeholder="Выберите исполнителя проекта" data-default="Выберите исполнителя проекта">
+											</div>
+											<div class="select-content">
+												<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+												<label for="singleSelect0" class="select-content__label"></label>
+												<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+												<label for="singleSelect1" class="select-content__label">Lorem 1</label>
+												<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+												<label for="singleSelect2" class="select-content__label">Lorem 2</label>
+												<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+												<label for="singleSelect3" class="select-content__label">Lorem 3</label>
+											</div>
+										</span>
+									</div>
+									<span class="editing-panel__line"></span>
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Рубрика проекта
+										</div>
+										<div class="editing-panel-input__body editing-panel-input__body_80-20">
+											<div class="editing-panel-input__item_icon select">
+												<div class="select-title">
+													<input type="text" placeholder="Добавьте или выберите рубрику" data-default="Добавьте или выберите рубрику">
+												</div>
+												<div class="select-content">
+													<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+													<label for="singleSelect0" class="select-content__label"></label>
+													<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+													<label for="singleSelect1" class="select-content__label">Lorem 1</label>
+													<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+													<label for="singleSelect2" class="select-content__label">Lorem 2</label>
+													<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+													<label for="singleSelect3" class="select-content__label">Lorem 3</label>
+												</div>
+											</div>
+											<a href="#" class="editing-panel-input__button"></a>
+										</div>
+									</div>
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Метки проекта
+										</div>
+										<textarea class="editing-panel-input__item editing-panel-input__item_big" placeholder="Добавьте метки разделяя их запятыми или клавишей Enter"></textarea>
+									</div>
+									<span class="editing-panel__line"></span>
+									<div class="editing-panel-checkbox">
+										<input type="checkbox" name="rb1" id="rb1"> 
+										<label for="rb1">
+											Скрыть от других руководителей
+										</label>
+									</div>
+									<div class="editing-panel-checkbox">
+										<input type="checkbox" name="rb2" id="rb2"> 
+										<label for="rb2">
+											Скрыть от других исполнителей
+										</label>
+									</div>
+									<div class="editing-panel-checkbox">
+										<input type="checkbox" name="rb3" id="rb3"> 
+										<label for="rb3">
+											Скрыть из общего списка проектов
+										</label>
+									</div>
+									<div class="editing-panel-checkbox">
+										<input type="checkbox" name="rb4" id="rb4"> 
+										<label for="rb4">
+											Скрыть для клиента
+										</label>
+									</div>
+									<span class="editing-panel__line"></span>
+									<div class="editing-panel-input">
+										<div class="editing-panel-input__title">
+											Статус проекта
+										</div>
+										<div class="editing-panel-input__status editing-panel-input__status_green">
+											В процессе
+										</div>
+										<div class="editing-panel-input__status editing-panel-input__status_yellow">
+											Согласование
+										</div>
+										<div class="editing-panel-input__status editing-panel-input__status_blue">
+											Выполнено
+										</div>
+										<div class="editing-panel-input__body editing-panel-input__body_80-20">
+											<div class="editing-panel-input__item_icon select">
+												<div class="select-title">
+													<input type="text" placeholder="В процессе" data-default="В процессе">
+												</div>
+												<div class="select-content">
+													<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+													<label for="singleSelect0" class="select-content__label"></label>
+													<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+													<label for="singleSelect1" class="select-content__label">Lorem 1</label>
+													<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+													<label for="singleSelect2" class="select-content__label">Lorem 2</label>
+													<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+													<label for="singleSelect3" class="select-content__label">Lorem 3</label>
+												</div>
+											</div>
+											<a href="#" class="editing-panel-input__button">Сохранить изменения </a>
+										</div>
+									</div>
+								</form>
+								<div class="editing-content">
+									<div class="editing-content__header input-field">
+										<div class="input-field__body">
+											<label class="input-field__wrapper" for="fileOne">
+												<img src="img/download-icon.svg" alt="">
+											</label>
+											<input name="file" type="file" name="file" class="field _req" id="fileOne">
+										</div>
+									</div>
+									<div class="editing-content-sample">
+										<div class="editing-content-sample__header">
+											Шаблон задачи
+										</div>
+										<div class="editing-content-sample__wrapper">
+											<div class="editing-content-sample__input">
+												<input type="text" placeholder="Выберите шаблон задачи">
+											</div>
+											<a href="" class="editing-content-sample__link">
+												Применить
+											</a>
+											<a href="" class="editing-content-sample__link">
+												Сохранить задачи
+											</a>
+											<a href="" class="editing-content-sample__button"></a>
+										</div>
+									</div>
+									<span class="editing-content__line"></span>
+									<div class="editing-content-task">
+										<div class="editing-content-task-header">
+											<div class="editing-content-task-header__text">
+												Задача 1.
+											</div>
+											<div class="editing-content-task-header__list">
+												<a href="" class="editing-content-task-header__item">
+													Анна Литяг
+												</a>
+												<a href="" class="editing-content-task-header__item">
+													Антон Гребенюков
+												</a>
+												<div class="editing-panel-input__status editing-panel-input__status_green">
+													В процессе
+												</div>
+											</div>
+										</div>
+										<div class="editing-content-sample__input">
+											<input type="text" placeholder="Добавьте задачу проекта">
+											<div class="editing-content-sample-panel">
+												<div class="editing-content-sample-panel__button">
+													<div class="editing-content-sample-panel__button-wrapper">
+														<span></span>
+													</div>
+												</div>
+												<div class="editing-content-sample-panel__wrapper">
+													<a href="" class="editing-panel-input__status editing-panel-input__status_green">
+														В процессе
+													</a>
+													<a href="" class="editing-panel-input__status editing-panel-input__status_bacgraund-none editing-panel-input__status_yellow">
+														Согласование
+													</a>
+													<a href="" class="editing-panel-input__status editing-panel-input__status_bacgraund-none editing-panel-input__status_blue">
+														Выполнено
+													</a>
+												</div>
+											</div>
+											<div class="editing-content-sample__reght-button">
+												<a href="#" class="editing-content-sample__reght-button_top icon-pointer"></a>
+												<a href="#" class="editing-content-sample__reght-button_center"></a>
+												<a href="#" class="editing-content-sample__reght-button_bottom icon-pointer"></a>
+											</div>
+										</div>
+									</div>
+									<div class="editing-content-task editing-content-task__pading-left">
+										<div class="editing-content-task-header">
+											<div class="editing-content-task-header__text">
+												Задача 1.1.
+											</div>
+											<div class="editing-content-task-header__list">
+												<a href="" class="editing-content-task-header__item">
+													Маргарита Иванова
+												</a>
+												<div class="editing-panel-input__status editing-panel-input__status_green">
+													В процессе
+												</div>
+											</div>
+										</div>
+										<div class="editing-content-sample__input">
+											<input type="text" placeholder="Добавьте задачу проекта">
+											<div class="editing-content-sample-panel">
+												<div class="editing-content-sample-panel__button">
+													<div class="editing-content-sample-panel__button-wrapper">
+														<span></span>
+													</div>
+												</div>
+												<div class="editing-content-sample-panel__wrapper">
+													<a href="" class="editing-panel-input__status editing-panel-input__status_green">
+														В процессе
+													</a>
+													<a href="" class="editing-panel-input__status editing-panel-input__status_bacgraund-none editing-panel-input__status_yellow">
+														Согласование
+													</a>
+													<a href="" class="editing-panel-input__status editing-panel-input__status_bacgraund-none editing-panel-input__status_blue">
+														Выполнено
+													</a>
+												</div>
+											</div>
+											<div class="editing-content-sample__reght-button">
+												<a href="#" class="editing-content-sample__reght-button_top icon-pointer"></a>
+												<a href="#" class="editing-content-sample__reght-button_center"></a>
+												<a href="#" class="editing-content-sample__reght-button_bottom icon-pointer"></a>
+											</div>
+										</div>
+										<div class="editing-content-task-foter">
+											<a href="#" class="editing-content-task-foter__button">
+												<span class="editing-content-task-foter__content"></span>
+												<span class="editing-content-task-foter__text">
+													Добавить подзадачу
+												</span>
+											</a>
+											<a href="#" class="editing-content-task-foter__button">
+												<span class="editing-content-task-foter__content"></span>
+												<span class="editing-content-task-foter__text">
+													Сохранить задачи в шаблон
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="editing-content-task">
+										<div class="editing-content-task-header">
+											<div class="editing-content-task-header__text">
+												Задача 2.
+											</div>
+											<div class="editing-content-task-header__list">
+												<a href="" class="editing-content-task-header__item">
+													Коля Романов
+												</a>
+												<a href="" class="editing-content-task-header__item">
+													Виктор Арефьянов
+												</a>
+												<div class="editing-panel-input__status editing-panel-input__status_green">
+													В процессе
+												</div>
+											</div>
+										</div>
+										<div class="editing-content-sample__input">
+											<input type="text" placeholder="Добавьте задачу проекта">
+											<div class="editing-content-sample-panel">
+												<div class="editing-content-sample-panel__button">
+													<div class="editing-content-sample-panel__button-wrapper">
+														<span></span>
+													</div>
+												</div>
+												<div class="editing-content-sample-panel__wrapper">
+													<a href="" class="editing-panel-input__status editing-panel-input__status_green">
+														В процессе
+													</a>
+													<a href="" class="editing-panel-input__status editing-panel-input__status_bacgraund-none editing-panel-input__status_yellow">
+														Согласование
+													</a>
+													<a href="" class="editing-panel-input__status editing-panel-input__status_bacgraund-none editing-panel-input__status_blue">
+														Выполнено
+													</a>
+												</div>
+											</div>
+											<div class="editing-content-sample__reght-button">
+												<a href="#" class="editing-content-sample__reght-button_top icon-pointer"></a>
+												<a href="#" class="editing-content-sample__reght-button_center"></a>
+												<a href="#" class="editing-content-sample__reght-button_bottom icon-pointer"></a>
+											</div>
+										</div>
+										<div class="editing-content-task-foter">
+											<a href="#" class="editing-content-task-foter__button">
+												<span class="editing-content-task-foter__content"></span>
+												<span class="editing-content-task-foter__text">
+													Добавить новую задачу
+												</span>
+											</a>
+											<a href="#" class="editing-content-task-foter__button">
+												<span class="editing-content-task-foter__content"></span>
+												<span class="editing-content-task-foter__text">
+													Добавить подзадачу
+												</span>
+											</a>
+											<a href="#" class="editing-content-task-foter__button">
+												<span class="editing-content-task-foter__content"></span>
+												<span class="editing-content-task-foter__text">
+													Вставить задачи из шаблона
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="editing-content-task">
+										<div class="editing-content-task-header">
+											<div class="editing-content-task-header__text">
+												Задача 3.
+											</div>
+											<div class="editing-content-task-header__list">
+												<a href="" class="editing-content-task-header__item">
+													Павел Мельник
+												</a>
+												<div class="editing-panel-input__status editing-panel-input__status_none editing-panel-input__status_yellow"></div>
+												<div class="editing-panel-input__status editing-panel-input__status_green">
+													В процессе
+												</div>
+											</div>
+										</div>
+										<div class="editing-content-sample__input">
+											<input type="text" placeholder="Добавьте задачу проекта">
+											<div class="editing-content-sample-panel">
+												<div class="editing-content-sample-panel__button">
+													<div class="editing-content-sample-panel__button-wrapper">
+														<span></span>
+													</div>
+												</div>
+												<div class="editing-content-sample-panel__wrapper">
+													<a href="" class="editing-panel-input__status editing-panel-input__status_green">
+														В процессе
+													</a>
+													<a href="" class="editing-panel-input__status editing-panel-input__status_bacgraund-none editing-panel-input__status_yellow">
+														Согласование
+													</a>
+													<a href="" class="editing-panel-input__status editing-panel-input__status_bacgraund-none editing-panel-input__status_blue">
+														Выполнено
+													</a>
+													<span class="editing-content__line"></span>
+													<a href="" class="editing-panel-input__status editing-panel-input__status_yellow">
+														Будет согласовано
+													</a>
+													<span class="editing-content__line"></span>
+													<div class="editing-content-checkbox">
+														<input type="checkbox" name="rb11" id="rb11"> 
+														<label for="rb11">
+															Анна Литяг
+														</label>
+													</div>
+													<div class="editing-content-checkbox">
+														<input type="checkbox" name="rb12" id="rb12"> 
+														<label for="rb12">
+															Коля Романов
+														</label>
+													</div>
+													<div class="editing-content-checkbox">
+														<input type="checkbox" name="rb13" id="rb13"> 
+														<label for="rb13">
+															Маргарита Иванова
+														</label>
+													</div>
+													<div class="editing-content-checkbox">
+														<input type="checkbox" name="rb14" id="rb14"> 
+														<label for="rb14">
+															Антон Гребенюков
+														</label>
+													</div>
+													<div class="editing-content-checkbox">
+														<input type="checkbox" name="rb15" id="rb15"> 
+														<label for="rb15">
+															Виктор Арефьянов
+														</label>
+													</div>
+													<div class="editing-content-checkbox">
+														<input type="checkbox" name="rb16" id="rb16"> 
+														<label for="rb16">
+															Павел Мельник
+														</label>
+													</div>
+													<span class="editing-content__line"></span>
+													<a href="#" class="editing-content-sample-panel__delit">
+														<img src="img/delete.png" alt="">
+														<span>Удалить задачу</span>
+													</a>
+												</div>
+											</div>
+											<div class="editing-content-sample__reght-button">
+												<a href="#" class="editing-content-sample__reght-button_top icon-pointer"></a>
+												<a href="#" class="editing-content-sample__reght-button_center"></a>
+												<a href="#" class="editing-content-sample__reght-button_bottom icon-pointer"></a>
+											</div>
+										</div>
+										<div class="editing-content-task-foter">
+											<a href="#" class="editing-content-task-foter__button">
+												<span class="editing-content-task-foter__content"></span>
+												<span class="editing-content-task-foter__text">
+													Добавить новую задачу
+												</span>
+											</a>
+											<a href="#" class="editing-content-task-foter__button">
+												<span class="editing-content-task-foter__content"></span>
+												<span class="editing-content-task-foter__text">
+													Добавить подзадачу
+												</span>
+											</a>
+											<a href="#" class="editing-content-task-foter__button">
+												<span class="editing-content-task-foter__content"></span>
+												<span class="editing-content-task-foter__text">
+													Вставить задачи из шаблона
+												</span>
+											</a>
+										</div>
+									</div>
+									<span class="editing-content__line"></span>
+									<div class="editing-content-img">
+										<div class="editing-content-img__list">
+											<div class="editing-content-img__preview">
+												<input name="file" type="file" name="file" id="fileTwo">
+											</div>
+										</div>
+										<label class="editing-content-img__button" for="fileTwo">
+											Загрузить файлы
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<script src="js/custom.js"></script>
+	</body>
+</html>

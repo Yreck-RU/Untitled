@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<!--Заголовок страницы, контейнер для других важных данных (не отображается)-->
+	<head>
+		<!--Заголовок страницы-->
+		<title>Title</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+		<!--===============================-->
+		<!--Libs-->
+
+			<!--JQ--><script src="libs/jquery.js"></script>
+
+		<!--===============================-->
+		<!--Css-->
+			<link rel="stylesheet" href="css/style.css" />
+		<!--===============================-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<section>
+				<div class="panel">
+					<div class="container panel__wrapper">
+						<div class="panel-link">
+							<div class="panel-link-button">
+								<span></span>
+							</div>
+							<div class="panel-link__burger">
+								<div class="">
+									<div class="panel-link__logo">
+										<a href="#"><img src="img/panel/Logo.svg" alt=""></a>
+									</div>
+									<div class="panel-link__list">
+										<a href="#" class="panel-link__item _active icon-category"></a>
+										<a href="#" class="panel-link__item icon-document-favorite"></a>
+										<a href="#" class="panel-link__item icon-chart-2"></a>
+										<a href="#" class="panel-link__item icon-personalcard"></a>
+										<a href="#" class="panel-link__item icon-search-normal"></a>
+										<a href="#" class="panel-link__item icon-home-hashtag"></a>
+									</div>
+									<div class="panel-link__exit">
+										<a href="#" class="panel-link__item icon-login"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-content">
+							<div class="panel-header">
+								<div class="panel-header__title">
+									Настройки профиля
+								</div>
+								<div class="panel-header__butons">
+									<a href="" class="panel-header__button">
+										<span class="icon-notification"></span>
+									</a>
+									<a href="#" class="panel-header-user">
+										<span class="panel-header-user__img ibg">
+											<img src="img/project/2.jpg" alt="">
+										</span>
+										<span class="panel-header-user__text">
+											<span>Виктор А.</span>
+											<span class="icon-pointer"></span>
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="profile">
+								<a href="#" class="profile-top-link">
+									<img src="img/arrow-square-left.svg" alt="" class="profile-top-link__link">
+									<span class="profile-top-link__text">Вернуться в профиль</span>
+								</a>
+								<form action="#" class="profile__wrapper">
+									<div class="profile-img">
+										<div class="profile-img__content ibg">
+											<img src="img/panel/1.jpg" alt="">
+											<a href="#"><img src="img/download-icon.svg" alt=""></a>
+										</div>
+										<button class="profile-img__button">
+											Сохранить
+										</button>
+									</div>
+									<div class="profile__form">
+										<div class="profile__form-title">
+											Личные данные
+										</div>
+										<div class="form-body__block">
+											<div class="editing-panel-input">
+												<div class="editing-panel-input__title">
+													Имя
+												</div>
+												<input type="text" name="" class="editing-panel-input__item" >
+											</div>
+											<div class="editing-panel-input">
+												<div class="editing-panel-input__title">
+													Фамилия
+												</div>
+												<input type="text" name="" class="editing-panel-input__item" >
+											</div>
+										</div>
+										<div class="form-body__block">
+											<div class="editing-panel-input">
+												<div class="editing-panel-input__title">
+													Отчество
+												</div>
+												<input type="text" name="" class="editing-panel-input__item" >
+											</div>
+											<div class="editing-panel-input">
+												<div class="editing-panel-input__title">
+													Номер телефона
+												</div>
+												<input type="tel" name="" class="editing-panel-input__item" >
+											</div>
+										</div>
+										<div class="form-body__block">
+											<div class="editing-panel-input">
+												<div class="editing-panel-input__title">
+													Пол
+												</div>
+												<div class="editing-panel-input__item_icon select">
+													<div class="select-title">
+														<input type="text" placeholder="Добавьте или выберите клиента" data-default="RRMS – (relapsing-remitt..." class="_req">
+													</div>
+													<div class="select-content">
+														<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+														<label for="singleSelect0" class="select-content__label"></label>
+														<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect1" class="select-content__label">Lorem 1</label>
+														<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect2" class="select-content__label">Lorem 2</label>
+														<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+														<label for="singleSelect3" class="select-content__label">Lorem 3</label>
+													</div>
+												</div>
+											</div>
+											<div class="editing-panel-input">
+												<div class="editing-panel-input__title">
+													Номер телефона
+												</div>
+												<div class="editing-panel-input-data">
+													<div class="editing-panel-input__body editing-panel-input__body_80-20">
+														<div class="editing-panel-input__item_icon select">
+															<div class="select-title">
+																<input type="text" placeholder="16" data-default="16" class="_req">
+															</div>
+															<div class="select-content">
+																<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+																<label for="singleSelect0" class="select-content__label"></label>
+																<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+																<label for="singleSelect1" class="select-content__label">1</label>
+																<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+																<label for="singleSelect2" class="select-content__label">2</label>
+																<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+																<label for="singleSelect3" class="select-content__label">3</label>
+															</div>
+														</div>
+													</div>
+													<div class="editing-panel-input__body editing-panel-input__body_80-20">
+														<div class="editing-panel-input__item_icon select">
+															<div class="select-title">
+																<input type="text" placeholder="Апрель" data-default="Апрель" class="_req">
+															</div>
+															<div class="select-content">
+																<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+																<label for="singleSelect0" class="select-content__label"></label>
+																<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+																<label for="singleSelect1" class="select-content__label">Lorem 1</label>
+																<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+																<label for="singleSelect2" class="select-content__label">Lorem 2</label>
+																<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+																<label for="singleSelect3" class="select-content__label">Lorem 3</label>
+															</div>
+														</div>
+													</div>
+													<div class="editing-panel-input__body editing-panel-input__body_80-20">
+														<div class="editing-panel-input__item_icon select">
+															<div class="select-title">
+																<input type="text" placeholder="2023" data-default="2023" class="_req">
+															</div>
+															<div class="select-content">
+																<input id="singleSelect0" class="select-content__input" type="radio" name="singleSelect" checked />
+																<label for="singleSelect0" class="select-content__label"></label>
+																<input id="singleSelect1" class="select-content__input" type="radio" name="singleSelect" />
+																<label for="singleSelect1" class="select-content__label">2001</label>
+																<input id="singleSelect2" class="select-content__input" type="radio" name="singleSelect" />
+																<label for="singleSelect2" class="select-content__label">2002</label>
+																<input id="singleSelect3" class="select-content__input" type="radio" name="singleSelect" />
+																<label for="singleSelect3" class="select-content__label">2003</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-body__block">
+											<div class="editing-panel-input">
+												<div class="editing-panel-input__title">
+													Email
+												</div>
+												<input type="email" name="" class="editing-panel-input__item" >
+											</div>
+											<div class="editing-panel-input">
+												<div class="editing-panel-input__title">
+													Логин
+												</div>
+												<input type="text" name="" class="editing-panel-input__item" >
+											</div>
+										</div>
+										<div class="form-body__block">
+											<div class="editing-panel-input">
+												<div class="editing-panel-input__title ">
+													Пароль
+												</div>
+												<div class="form-input form-input-pasvord">
+													<input type="password" name="" id="login" class="form-input-pasvord__input">
+													<span class="form-input__button icon-eye-slash form-input-pasvord__button">
+														<img src="img/eye.svg" alt="">
+													</span>
+												</div>
+											</div>
+											<div class="editing-panel-input">
+												<div class="editing-panel-input__title">
+													Подтвердите пароля
+												</div>
+												<div class="form-input form-input-pasvord">
+													<input type="password" name="" id="login" class="form-input-pasvord__input">
+													<span class="form-input__button icon-eye-slash form-input-pasvord__button">
+														<img src="img/eye.svg" alt="">
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<script src="js/custom.js"></script>
+	</body>
+</html>

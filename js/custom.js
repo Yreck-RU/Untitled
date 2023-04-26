@@ -127,4 +127,45 @@ if (PanelBurger) {
 		PanelBurger.classList.toggle('_active');
 		panelBurgerWrapper.classList.toggle('_active');
 	});
+	document.addEventListener( 'click', (e) => {
+		let withinBoundaries = e.composedPath().includes(PanelBurger);
+		let withinBoundaries2 = e.composedPath().includes(panelBurgerWrapper);
+		if ( ! withinBoundaries && ! withinBoundaries2) {
+			PanelBurger.classList.remove('_active');
+			panelBurgerWrapper.classList.remove('_active');
+		}
+		
+	})
+}
+
+
+
+/*================================================*/
+
+
+
+
+
+const inputPasvords = document.querySelectorAll('.form-input-pasvord');
+
+if (inputPasvords) {
+	for (let i = 0; i < inputPasvords.length; i++) {
+		let inputPasvord = inputPasvords[i];
+		let inputPasvordButton = inputPasvord.querySelector('.form-input-pasvord__button');
+		let inputPasvordWrapper = inputPasvord.querySelector('.form-input-pasvord__input');
+
+		inputPasvordButton.addEventListener("click", function (e) {
+			inputPasvord.classList.toggle('_active');
+
+			if (inputPasvord.classList.contains('_active')) {
+				inputPasvordWrapper.setAttribute('type', 'text');
+			} else {
+				inputPasvordWrapper.setAttribute('type', 'password');
+			}
+			let timerinAniItemWrapper = setTimeout(function tick() {
+				inputPasvordWrapper.setAttribute('type', 'password');
+				inputPasvord.classList.remove('_active');
+			}, 15000);
+		});
+	}
 }

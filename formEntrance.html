@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<!--Заголовок страницы, контейнер для других важных данных (не отображается)-->
+	<head>
+		<!--Заголовок страницы-->
+		<title>Title</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+		<!--===============================-->
+		<!--Libs-->
+
+			<!--JQ--><script src="libs/jquery.js"></script>
+
+		<!--===============================-->
+		<!--Css-->
+			<link rel="stylesheet" href="css/style.css" />
+		<!--===============================-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<section>
+				<div class="form">
+					<div class="form__wrapper">
+						<img src="img/panel/Logo.svg" alt="" class="form__logo">
+						<h3 class="form__title">
+							Вход в систему
+						</h3>
+						<form action="#" class="form-body">
+							<div class="form-input">
+								<label for="login">Логин или email</label>
+								<input type="text" name="" id="login">
+								<span class="form-input__icon icon-user"></span>
+							</div>
+							<div class="form-input form-input-pasvord">
+								<label for="login">Логин или email</label>
+								<input type="password" name="" id="login" class="form-input-pasvord__input">
+								<span class="form-input__icon icon-lock"></span>
+								<span class="form-input__button icon-eye-slash form-input-pasvord__button">
+									<img src="img/eye.svg" alt="">
+								</span>
+							</div>
+							<div class="form-input-chicbox">
+								<div class="editing-content-checkbox">
+									<input type="checkbox" name="rbf1" id="rbf1"> 
+									<label for="rbf1">
+										Запомнить меня
+									</label>
+								</div>
+								<a href="#">
+									Забыли пароль? 
+								</a>
+							</div>
+							<button class="form-body__button">
+								Войти в аккаунт
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<script src="js/custom.js"></script>
+	</body>
+</html>
