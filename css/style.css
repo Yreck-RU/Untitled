@@ -83,6 +83,23 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden; }
 
+@media (min-width: 1064px) {
+  .hover-transform {
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .hover-transform:hover {
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  .hover-transform:active {
+    -webkit-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    transform: translateY(-1px);
+    opacity: 0.8; } }
+
 /*--------------------*/
 body {
   font-family: Arial; }
@@ -2526,6 +2543,20 @@ textarea.editing-panel-input__item {
   @media (max-width: 767px) {
     .panel-link__item {
       font-size: 24px; } }
+  @media (min-width: 1064px) {
+    .panel-link__item {
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+      .panel-link__item:hover {
+        -webkit-transform: translate(-50%, -2px);
+        -ms-transform: translate(-50%, -2px);
+        transform: translate(-50%, -2px); }
+      .panel-link__item:active {
+        -webkit-transform: translate(-50%, -1px);
+        -ms-transform: translate(-50%, -1px);
+        transform: translate(-50%, -1px);
+        opacity: 0.8; } }
 
 .panel-link__exit > * {
   margin: 0;
