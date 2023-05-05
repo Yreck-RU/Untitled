@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<!--Заголовок страницы, контейнер для других важных данных (не отображается)-->
+	<head>
+		<!--Заголовок страницы-->
+		<title>Title</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/favicon.ico"
+		/>
+		<!--===============================-->
+		<!--Libs-->
+
+			<!--JQ--><script src="libs/jquery.js"></script>
+
+		<!--===============================-->
+		<!--Css-->
+			<link rel="stylesheet" href="css/style.css" />
+		<!--===============================-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<section>
+				<div class="panel">
+					<div class="container panel__wrapper">
+						<div class="panel-link">
+							<div class="panel-link-button">
+								<span></span>
+							</div>
+							<div class="panel-link__burger">
+								<div class="">
+									<div class="panel-link__logo">
+										<a href="#"><img src="img/panel/Logo.svg" alt=""></a>
+									</div>
+									<div class="panel-link__list">
+										<a href="#" class="panel-link__item _active icon-category"></a>
+										<a href="#" class="panel-link__item icon-document-favorite"></a>
+										<a href="#" class="panel-link__item icon-chart-2"></a>
+										<a href="#" class="panel-link__item icon-personalcard"></a>
+										<a href="#" class="panel-link__item icon-search-normal"></a>
+										<a href="#" class="panel-link__item icon-home-hashtag"></a>
+									</div>
+									<div class="panel-link__exit">
+										<a href="#" class="panel-link__item icon-login"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-content">
+							<div class="panel-header">
+								<div class="panel-header__title">
+									Проекты студии
+								</div>
+								<div class="panel-header__butons">
+									<a href="" class="panel-header__button hover-transform">
+										<span class="icon-notification"></span>
+									</a>
+									<a href="#" class="panel-header-user hover-transform">
+										<span class="panel-header-user__img ibg">
+											<img src="img/project/2.jpg" alt="">
+										</span>
+										<span class="panel-header-user__text">
+											<span>Виктор А.</span>
+											<span class="icon-pointer"></span>
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="admin-panel">
+								<div class="admin-panel-links">
+									<a href="#" class="admin-panel-link">
+										<img src="img/adminPanel/1.svg" alt="" class="admin-panel-link__img">
+										<img src="img/adminPanel/1-f.svg" alt="" class="admin-panel-link__img admin-panel-link__img_f">
+										<span class="admin-panel-link__text">
+											Вернуться в профиль
+										</span>
+									</a>
+									<a href="#" class="admin-panel-link">
+										<img src="img/adminPanel/2.svg" alt="" class="admin-panel-link__img">
+										<img src="img/adminPanel/2-f.svg" alt="" class="admin-panel-link__img admin-panel-link__img_f">
+										<span class="admin-panel-link__text">
+											Сотрудники
+										</span>
+									</a>
+									<a href="#" class="admin-panel-link">
+										<img src="img/adminPanel/3.svg" alt="" class="admin-panel-link__img">
+										<img src="img/adminPanel/3-f.svg" alt="" class="admin-panel-link__img admin-panel-link__img_f">
+										<span class="admin-panel-link__text">
+											Клиенты
+										</span>
+									</a>
+									<a href="#" class="admin-panel-link active">
+										<img src="img/adminPanel/4.svg" alt="" class="admin-panel-link__img">
+										<img src="img/adminPanel/4-f.svg" alt="" class="admin-panel-link__img admin-panel-link__img_f">
+										<span class="admin-panel-link__text">
+											Проекты
+										</span>
+									</a>
+									<a href="#" class="admin-panel-link">
+										<img src="img/adminPanel/5.svg" alt="" class="admin-panel-link__img">
+										<img src="img/adminPanel/5-f.svg" alt="" class="admin-panel-link__img admin-panel-link__img_f">
+										<span class="admin-panel-link__text">
+											Рубрики проектов
+										</span>
+									</a>
+									<a href="#" class="admin-panel-link">
+										<img src="img/adminPanel/6.svg" alt="" class="admin-panel-link__img">
+										<img src="img/adminPanel/6-f.svg" alt="" class="admin-panel-link__img admin-panel-link__img_f">
+										<span class="admin-panel-link__text">
+											Должность и спец.
+										</span>
+									</a>
+									<a href="#" class="admin-panel-link">
+										<img src="img/adminPanel/7.svg" alt="" class="admin-panel-link__img">
+										<img src="img/adminPanel/7-f.svg" alt="" class="admin-panel-link__img admin-panel-link__img_f">
+										<span class="admin-panel-link__text">
+											Ниша клиентов
+										</span>
+									</a>
+								</div>
+								<div class="admin-panel-wrapper">
+									<div class="project-header">
+										<div class="project-header__text">
+											<span class="project-header__text_big">Сортировка:</span> сначала новые
+										</div>
+										<div class="project-header__links _active">
+											<a href="" class="project-header__link hover-transform project-header__link_black">
+												Все
+											</a>
+											<a href="" class="project-header__link hover-transform">
+												Логотип
+											</a>
+											<a href="" class="project-header__link hover-transform">
+												Брендбук
+											</a>
+											<a href="" class="project-header__link hover-transform">
+												Айдентика
+											</a>
+											<a href="" class="project-header__link hover-transform">
+												Моушн дизайн
+											</a>
+											<span class="project-header__link hover-transform project-header__link_border project-header__link-all">
+												+ Всё
+											</span>
+											<a href="" class="project-header__link hover-transform">
+												Паттерн 
+											</a>
+											<a href="" class="project-header__link hover-transform">
+												Реклама
+											</a>
+											<a href="" class="project-header__link hover-transform">
+												Видео презентации
+											</a>
+											<a href="" class="project-header__link hover-transform">
+												Сайты
+											</a>
+											<a href="" class="project-header__link hover-transform">
+												Сторис
+											</a>
+											<span class="project-header__link hover-transform project-header__link_border project-header__link-hide">
+												– Скрыть категории
+											</span>
+										</div>
+									</div>
+									<div class="admin-panel-table__wrapper">
+										<table class="admin-panel-table">
+											<tr class="admin-panel-table__title">
+												<td class="admin-panel-table__content admin-panel-table__content_15">
+													Превью
+												</td>
+												<td class="admin-panel-table__content admin-panel-table__content_40">
+													Название
+												</td>
+												<td class="admin-panel-table__content admin-panel-table__content_10">
+													% 
+												</td>
+												<td class="admin-panel-table__content admin-panel-table__content_15">
+													Статус
+												</td>
+												<td class="admin-panel-table__content admin-panel-table__content_20">
+													Дней <br>
+													дозавершения
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text admin-panel-table__text_green">
+														60%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status editing-panel-input__status_green">
+														В процессе
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														45 дней
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text admin-panel-table__text_yellow">
+														73%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status editing-panel-input__status_yellow">
+														Согласование
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														31 день
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text admin-panel-table__text_blue">
+														100%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status editing-panel-input__status_blue">
+														Выполнено
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														3 дня
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text">
+														100%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status">
+														Завершен
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														30.03.2023
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text admin-panel-table__text_red">
+														100%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status editing-panel-input__status_red">
+														Отменен
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														25.03.2023
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text">
+														100%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status">
+														Завершен
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														30.03.2023
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text">
+														100%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status">
+														Завершен
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														30.03.2023
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text">
+														100%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status">
+														Завершен
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														30.03.2023
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text">
+														100%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status">
+														Завершен
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														30.03.2023
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text">
+														100%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status">
+														Завершен
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														30.03.2023
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text">
+														100%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status">
+														Завершен
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														30.03.2023
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text">
+														100%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status">
+														Завершен
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														30.03.2023
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+											<tr class="admin-panel-table__body">
+												<td class="admin-panel-table__img admin-panel-table__content_15">
+													<span class="ibg">
+														<img src="img/project/1.jpg" alt="">
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_40">
+													<span class="admin-panel-table__text">
+														Разработка логотипа для “Innovatec”
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_10">
+													<span class="admin-panel-table__text">
+														100%
+													</span>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_15">
+													<div class="editing-panel-input__status">
+														Завершен
+													</div>
+												</td>
+												<td class="admin-panel-table__blok admin-panel-table__content_20">
+													<span class="admin-panel-table__text">
+														30.03.2023
+													</span>
+													<img src="img/adminPanel/11.svg" alt="">
+												</td>
+											</tr>
+										</table>
+									</div>
+									<a href="" class="admin-panel-table__button-footer">
+										Показать ещё
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<script src="js/custom.js"></script>
+	</body>
+</html>
