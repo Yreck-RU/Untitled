@@ -62,15 +62,34 @@
 									<a href="" class="panel-header__button hover-transform">
 										<span class="icon-notification"></span>
 									</a>
-									<a href="#" class="panel-header-user hover-transform">
-										<span class="panel-header-user__img ibg">
-											<img src="img/project/2.jpg" alt="">
-										</span>
-										<span class="panel-header-user__text">
-											<span>Виктор А.</span>
-											<span class="icon-pointer"></span>
-										</span>
-									</a>
+									<div class="panel-header-user__wrapper">
+										<div class="panel-header-user hover-transform">
+											<span class="panel-header-user__img ibg">
+												<img src="img/project/2.jpg" alt="">
+											</span>
+											<span class="panel-header-user__text">
+												<span>Виктор А.</span>
+												<span class="icon-pointer"></span>
+											</span>
+										</div>
+										<div class="panel-header-user__list">
+											<a href="" class="panel-header-user__item">
+												lorem 1
+											</a>
+											<a href="" class="panel-header-user__item">
+												lorem 2
+											</a>
+											<a href="" class="panel-header-user__item">
+												lorem 3
+											</a>
+											<a href="" class="panel-header-user__item">
+												lorem 4
+											</a>
+											<a href="" class="panel-header-user__item">
+												lorem 5
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="profile-settings">
@@ -84,11 +103,12 @@
 									</a>
 								</div>
 								<div class="profile profile-settings__body">
-									<form action="#" class="profile__wrapper">
+									<div class="profile__wrapper">
 										<div class="profile-img profile-settings__profile-img">
 											<div class="profile-img__content ibg">
 												<img src="img/customerDataSettings/1.jpg" alt="">
 												<a href="#" class="hover-transform"><img src="img/download-icon.svg" alt=""></a>
+												<input type="file">
 											</div>
 											<div class="profile-settings-button">
 												<div class="editing-panel-input__title">
@@ -128,9 +148,26 @@
 													Специализация
 												</div>
 												<div class="employment-data-specialization__wrapper employment-data-specialization__wrapper_bacgraund">
-													<a href="#" class="employment-data-specialization__button">
-														<span></span>
-													</a>
+													<div class="choice-specialization">
+														<div class="choice-specialization__wrapper ">
+															<div class="choice-specialization__title employment-data-specialization__button">
+																<span></span>
+															</div>
+															<div class="choice-specialization__body">
+																<form action="#" class="editing-panel-input">
+																	<div class="editing-panel-input__title">
+																		Текст -- -- --
+																	</div>
+																	<div class="editing-panel-input__body">
+																		<div class="editing-panel-input__item">
+																			<input type="text" class="_req editing-panel-input__item">
+																		</div>
+																		<button class="editing-panel-input__button hover-transform"></button>
+																	</div>
+																</form>
+															</div>
+														</div>
+													</div>
 													<span class="employment-data-specialization__item">
 														Упаковка
 														<a href="">
@@ -182,7 +219,7 @@
 												</div>
 											</div>
 										</div>
-									</form>
+									</div>
 									<div class="employment-data">
 										<div class="employment-data__title">
 											Контактные лица

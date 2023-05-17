@@ -301,3 +301,178 @@ if (projectHeaderLink) {
 		projectHeaderLink.classList.add('_active');
 	});
 }
+
+
+
+
+/*==========================================*/
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+	const forms = document.querySelectorAll("._form");
+
+	for (let i = 0; i < forms.length; i++) {
+		let form = forms[i];
+
+		form.addEventListener("submit", function (e) {
+			e.preventDefault();
+			let error = formValidate(form);
+
+			if (error === 0) {
+				form.submit();
+			}
+		});
+
+		let formFeqInputs = form.querySelectorAll("._req");
+
+		for (let i = 0; i < formFeqInputs.length; i++) {
+			let formFeqInput = formFeqInputs[i];
+
+			formFeqInput.parentElement.addEventListener( 'click', (e) => {
+				for (let i = 0; i < formFeqInputs.length; i++) {
+					let formFeqInput = formFeqInputs[i];
+					if (formFeqInput.classList.contains('_error')) {
+						formRemoveError(formFeqInput);
+					}
+				}
+			})
+		}
+
+		function formValidate(form) {
+			let error = 0;
+			let formFeq = form.querySelectorAll("._req");
+
+			let formFeqPasvordOne = form.querySelector("._form-input-pasvord__one");
+			let formFeqPasvordTwo = form.querySelector("._form-input-pasvord__two");
+
+			for (var i = 0; i < formFeq.length; i++) {
+				let input = formFeq[i];
+				formRemoveError(input);
+
+				if (input.classList.contains('_email')) {
+					if (emailTest(input)) {
+						formAddError(input);
+						error++;
+					}
+				} else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
+					formAddError(input);
+					error++;
+				} else if (input.getAttribute("type") === "tel" && input.value != '') {
+					if (!nomerTest(input.value)) {
+						formAddError(input);
+						error++
+					}
+				} else if (input.classList.contains('_form-input-pasvord__one')) {
+					if (input.value == formFeqPasvordTwo.value) {
+						if (input.value === '') {
+							formAddError(input); 
+							error++;
+						}
+					} else {
+						formAddError(input);
+						error++;
+					}
+				} else if (input.classList.contains('_form-input-pasvord__two')) {
+					if (input.value == formFeqPasvordOne.value) {
+						if (input.value === '') {
+							formAddError(input); 
+							error++;
+						}
+					} else {
+						formAddError(input);
+						error++;
+					}
+				} else if (input.value === '') {
+					formAddError(input);
+					error++;
+				}
+			}
+
+			return error;
+		}
+
+		function formAddError(input) {
+			input.parentElement.classList.add("_error");
+			input.classList.add("_error");
+		}
+		function formRemoveError(input) {
+			input.parentElement.classList.remove("_error");
+			input.classList.remove("_error");
+		}
+		function emailTest(input) {
+			return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+		}
+		function nomerTest(nomer) {
+			if (true) {
+				if (nomer[0] === "8" && nomer.length == 17) {
+					return true;
+				} else if (nomer[0] === "+" && nomerTestSimvol(nomer) === "7" && nomer.length > 17) {
+					return true;
+				}
+			}
+		}
+		function nomerTestSimvol(nomer) {
+			for (let i = 1; i < nomer.length; i++) {
+				let simvol = nomer[i];
+
+				if (+simvol > 0) {
+					return simvol;
+				}
+			}
+		}
+	}
+});
+
+
+
+
+
+
+
+
+/*================================================*/
+
+
+const choiceSpecializations = document.querySelectorAll('.choice-specialization');
+
+if (choiceSpecializations) {
+	for (let i = 0; i < choiceSpecializations.length; i++) {
+		let choiceSpecialization = choiceSpecializations[i];
+		let choiceSpecializationButton = choiceSpecialization.querySelector('.choice-specialization__title');
+		let choiceSpecializationWrapper = choiceSpecialization.querySelector('.choice-specialization__body');
+
+		choiceSpecializationButton.addEventListener("click", function (e) {
+			choiceSpecialization.classList.toggle('_active');
+		});
+	}
+}
+
+
+/*==========================================*/
+
+
+
+/*================================================*/
+
+
+const panelHeaderUserWrappers = document.querySelectorAll('.panel-header-user__wrapper');
+
+if (panelHeaderUserWrappers) {
+	for (let i = 0; i < panelHeaderUserWrappers.length; i++) {
+		let panelHeaderUserWrapper = panelHeaderUserWrappers[i];
+		let panelHeaderUserWrapperButton = panelHeaderUserWrapper.querySelector('.panel-header-user');
+		let panelHeaderUserWrapperWrapper = panelHeaderUserWrapper.querySelector('.panel-header-user__list');
+
+		panelHeaderUserWrapperButton.addEventListener("click", function (e) {
+			panelHeaderUserWrapper.classList.toggle('_active');
+		});
+	}
+}
+
+
+/*==========================================*/

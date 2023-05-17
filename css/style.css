@@ -1101,6 +1101,7 @@ body {
 
 .editing-panel-input__item {
   background: #ededed;
+  border: 2px solid #ededed;
   height: 50px;
   width: 100%;
   display: block;
@@ -1111,9 +1112,15 @@ body {
   font-weight: 500;
   line-height: 20px;
   color: black;
-  margin-bottom: 12px; }
+  margin-bottom: 12px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
   .editing-panel-input__item.editing-panel-input__item_big {
     height: 71px; }
+  .editing-panel-input__item._error {
+    border: 2px solid rgba(255, 66, 0, 0.3);
+    color: rgba(255, 66, 0, 0.7); }
 
 textarea.editing-panel-input__item {
   height: 100px;
@@ -2193,7 +2200,6 @@ textarea.editing-panel-input__item {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   overflow: hidden; }
   .select-title:before, .select-title:after {
     content: "";
@@ -2217,12 +2223,18 @@ textarea.editing-panel-input__item {
     -ms-transform: translate(3px, -50%) rotate(-45deg);
     transform: translate(3px, -50%) rotate(-45deg); }
   .select-title._error input {
-    border: 1px solid rgba(255, 66, 0, 0.5) !important; }
+    border: 2px solid rgba(255, 66, 0, 0.3) !important;
+    color: rgba(255, 66, 0, 0.7) !important; }
   .select-title input {
     width: 100%;
     height: 100%;
     padding: 0 18px;
     background: #ededed;
+    border-radius: 10px;
+    border: 2px solid #ededed;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
@@ -2259,8 +2271,7 @@ textarea.editing-panel-input__item {
   height: 100%;
   padding: 8px 16px;
   font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #bdc5ed;
+  border: 2px solid #f7f7ff;
   background: #f7f7ff;
   font-family: Inter;
   font-size: 20px;
@@ -2955,38 +2966,37 @@ textarea.editing-panel-input__item {
   transform: translateY(-50%);
   cursor: pointer; }
 
-.form-input-pasvord .form-input-pasvord__button {
-  font-size: 0; }
-
-.form-input-pasvord .form-input-pasvord__button:before {
-  font-size: 20px;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s; }
-
-.form-input-pasvord._active .form-input-pasvord__button:before {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  -webkit-transition: all 0s ease 0s;
-  -o-transition: all 0s ease 0s;
-  transition: all 0s ease 0s; }
-
-.form-input-pasvord .form-input-pasvord__button img {
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  max-width: 0;
-  width: 20px;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s; }
-
-.form-input-pasvord._active .form-input-pasvord__button img {
-  pointer-events: auto;
-  opacity: 1;
-  visibility: visible;
-  max-width: none; }
+.form-input-pasvord {
+  border-radius: 0 !important;
+  background: none !important; }
+  .form-input-pasvord .form-input-pasvord__button {
+    font-size: 0; }
+  .form-input-pasvord .form-input-pasvord__button:before {
+    font-size: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .form-input-pasvord._active .form-input-pasvord__button:before {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    -webkit-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s; }
+  .form-input-pasvord .form-input-pasvord__button img {
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    max-width: 0;
+    width: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .form-input-pasvord._active .form-input-pasvord__button img {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+    max-width: none; }
 
 .form-body__button {
   width: 100%;
@@ -3062,6 +3072,17 @@ textarea.editing-panel-input__item {
       display: block; }
       .form-body__block > * {
         margin-left: 0 !important; } }
+
+.form-input-pasvord__input {
+  border: 2px solid #ededed;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+  background: #ededed !important; }
+  .form-input-pasvord__input._error {
+    border: 2px solid rgba(255, 66, 0, 0.3);
+    color: rgba(255, 66, 0, 0.7); }
 
 /*===========================*/
 .form-input-chicbox {
@@ -3190,7 +3211,17 @@ textarea.editing-panel-input__item {
 
 .profile-img__content {
   padding-top: 100%;
-  border-radius: 25px; }
+  border-radius: 25px;
+  position: relative; }
+  .profile-img__content input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer; }
   .profile-img__content a {
     position: absolute;
     right: 5px;
@@ -4448,7 +4479,7 @@ textarea.editing-panel-input__item {
   border-radius: 15px;
   position: relative;
   overflow: hidden; }
-  .contact-faces__blok input {
+  .contact-faces__blok input[type="file"] {
     position: absolute;
     left: 0;
     top: 0;
@@ -4478,3 +4509,106 @@ textarea.editing-panel-input__item {
   line-height: 15px;
   color: #000;
   margin-bottom: 24px; }
+
+.choice-specialization {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 5; }
+  .choice-specialization .choice-specialization__title span {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .choice-specialization._active .choice-specialization__title span {
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg); }
+  .choice-specialization._active .choice-specialization__body {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    opacity: 1;
+    pointer-events: auto; }
+
+.choice-specialization__wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.choice-specialization__title {
+  z-index: 10;
+  cursor: pointer;
+  display: inline-block; }
+
+.choice-specialization__body {
+  position: absolute;
+  width: 280px;
+  max-width: 95vw;
+  padding: 12px 8px;
+  height: 96px;
+  top: 0;
+  right: 0;
+  background: #fff;
+  -webkit-transform: translateY(-90%);
+  -ms-transform: translateY(-90%);
+  transform: translateY(-90%);
+  -webkit-box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  border-radius: 10px;
+  display: block;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+
+/*====================================*/
+.panel-header-user__wrapper {
+  height: 54px;
+  position: relative;
+  margin-left: 14px;
+  z-index: 10; }
+  .panel-header-user__wrapper .panel-header-user {
+    height: 52px;
+    margin-left: 0;
+    cursor: pointer; }
+  .panel-header-user__wrapper._active .panel-header-user__list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translate(-50%, 100%);
+    -ms-transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%); }
+
+.panel-header-user__list {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  padding: 12px;
+  background: #fff;
+  width: 75%;
+  -webkit-transform: translate(-50%, 90%);
+  -ms-transform: translate(-50%, 90%);
+  transform: translate(-50%, 90%);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+
+.panel-header-user__item {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #000;
+  display: block;
+  margin-bottom: 4px; }
+  .panel-header-user__item:last-child {
+    margin-bottom: 0; }

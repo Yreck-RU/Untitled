@@ -78,17 +78,18 @@
 									<img src="img/arrow-square-left.svg" alt="" class="profile-top-link__link">
 									<span class="profile-top-link__text">Вернуться в профиль</span>
 								</a>
-								<form action="#" class="profile__wrapper">
-									<div class="profile-img">
+								<div class="profile__wrapper">
+									<form action="#" class="profile-img">
 										<div class="profile-img__content ibg">
 											<img src="img/panel/1.jpg" alt="">
 											<a href="#" class="hover-transform"><img src="img/download-icon.svg" alt=""></a>
+											<input type="file">
 										</div>
 										<button class="profile-img__button hover-transform">
 											Сохранить
 										</button>
-									</div>
-									<div class="profile__form">
+									</form>
+									<form action="#" class="profile__form _form">
 										<div class="profile__form-title">
 											Личные данные
 										</div>
@@ -97,13 +98,13 @@
 												<div class="editing-panel-input__title">
 													Имя
 												</div>
-												<input type="text" name="" class="editing-panel-input__item" >
+												<input type="text" name="" class="editing-panel-input__item _req" >
 											</div>
 											<div class="editing-panel-input">
 												<div class="editing-panel-input__title">
 													Фамилия
 												</div>
-												<input type="text" name="" class="editing-panel-input__item" >
+												<input type="text" name="" class="editing-panel-input__item _req" >
 											</div>
 										</div>
 										<div class="form-body__block">
@@ -111,13 +112,13 @@
 												<div class="editing-panel-input__title">
 													Отчество
 												</div>
-												<input type="text" name="" class="editing-panel-input__item" >
+												<input type="text" name="" class="editing-panel-input__item _req" >
 											</div>
 											<div class="editing-panel-input">
 												<div class="editing-panel-input__title">
 													Номер телефона
 												</div>
-												<input type="tel" name="" data-tel-input class="editing-panel-input__item" >
+												<input type="tel" name="" data-tel-input class="editing-panel-input__item _req" >
 											</div>
 										</div>
 										<div class="form-body__block">
@@ -205,13 +206,13 @@
 												<div class="editing-panel-input__title">
 													Email
 												</div>
-												<input type="email" name="" class="editing-panel-input__item" >
+												<input type="email" name="" class="editing-panel-input__item _req _email" >
 											</div>
 											<div class="editing-panel-input">
 												<div class="editing-panel-input__title">
 													Логин
 												</div>
-												<input type="text" name="" class="editing-panel-input__item" >
+												<input type="text" name="" class="editing-panel-input__item _req" >
 											</div>
 										</div>
 										<div class="form-body__block">
@@ -220,7 +221,7 @@
 													Пароль
 												</div>
 												<div class="form-input form-input-pasvord">
-													<input type="password" name="" id="login" class="form-input-pasvord__input">
+													<input type="password" name="" id="login" class="form-input-pasvord__input _req _form-input-pasvord__one">
 													<span class="form-input__button icon-eye-slash form-input-pasvord__button">
 														<img src="img/eye.svg" alt="">
 													</span>
@@ -231,15 +232,18 @@
 													Подтвердите пароля
 												</div>
 												<div class="form-input form-input-pasvord">
-													<input type="password" name="" id="login" class="form-input-pasvord__input">
+													<input type="password" name="" id="login" class="form-input-pasvord__input _req _form-input-pasvord__two">
 													<span class="form-input__button icon-eye-slash form-input-pasvord__button">
 														<img src="img/eye.svg" alt="">
 													</span>
 												</div>
 											</div>
 										</div>
-									</div>
-								</form>
+										<button class="profile-img__button hover-transform">
+											Сохранить
+										</button>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>
