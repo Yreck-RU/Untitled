@@ -449,6 +449,13 @@ if (choiceSpecializations) {
 		choiceSpecializationButton.addEventListener("click", function (e) {
 			choiceSpecialization.classList.toggle('_active');
 		});
+		document.addEventListener( 'click', (e) => {
+			let withinBoundaries = e.composedPath().includes(choiceSpecializationButton);
+			let withinBoundaries2 = e.composedPath().includes(choiceSpecializationWrapper);
+			if ( ! withinBoundaries && ! withinBoundaries2) {
+				choiceSpecialization.classList.remove('_active');
+			}
+		})
 	}
 }
 
@@ -471,6 +478,13 @@ if (panelHeaderUserWrappers) {
 		panelHeaderUserWrapperButton.addEventListener("click", function (e) {
 			panelHeaderUserWrapper.classList.toggle('_active');
 		});
+		document.addEventListener( 'click', (e) => {
+			let withinBoundaries = e.composedPath().includes(panelHeaderUserWrapperButton);
+			let withinBoundaries2 = e.composedPath().includes(panelHeaderUserWrapperWrapper);
+			if ( ! withinBoundaries && ! withinBoundaries2) {
+				panelHeaderUserWrapper.classList.remove('_active');
+			}
+		})
 	}
 }
 

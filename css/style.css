@@ -4571,7 +4571,7 @@ textarea.editing-panel-input__item {
   height: 54px;
   position: relative;
   margin-left: 14px;
-  z-index: 10; }
+  z-index: 20; }
   .panel-header-user__wrapper .panel-header-user {
     height: 52px;
     margin-left: 0;
