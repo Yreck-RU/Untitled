@@ -4565,6 +4565,9 @@ textarea.editing-panel-input__item {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
+  @media (max-width: 420px) {
+    .choice-specialization__body {
+      max-width: 70vw; } }
 
 /*====================================*/
 .panel-header-user__wrapper {
